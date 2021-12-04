@@ -94,7 +94,7 @@ function App() {
       if (flag) {
         setTimer(10);
         updateWord();
-        setScore(score + 10);
+        setScore((score) => score + 10);
         handleCheckQuestion();
         if (numberQuestion !== 10) {
           alert("Bạn có thêm 10 điểm");
@@ -125,6 +125,7 @@ function App() {
       if (numberQuestion !== 10) {
         alert("Wrong!");
       }
+    } else {
     }
   }, [timer]);
 
